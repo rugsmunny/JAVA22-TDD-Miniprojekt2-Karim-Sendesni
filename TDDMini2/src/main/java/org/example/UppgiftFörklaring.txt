@@ -1,0 +1,68 @@
+Mini Projekt 2
+
+Red-Green-Refactor
+Inlämning 2023-11-27
+
+I detta miniprojekt ska vi:
+Vi kommer att träna på att använda Unit testning.
+Vi kommer att träna på att skapa testmetoder.
+Vi kommer att träna på att använda Red-Green-Refactor metoden.
+
+Vi kommer att skapa enhetstester enligt principerna för Red-Green-Refactor.
+
+
+Programmet har vissa problem och behöver refaktoreras.
+
+Målet med uppgiften är att skapa kod som överensstämmer med den nya specifikationen.
+Ny kod bör utvecklas enligt principerna för Red-Green-Refactor.
+Ny kod kan innebära att utveckla en helt ny metod eller en modifiering av befintlig kod.
+Du bör inte ta bort hela den befintliga kodbasen. Försök att ändra den om det är möjligt.
+
+Principerna för Red-Green-Refactor dikterar att vi börja utvecklingen med att skapa en
+testmetod som uppfyller en av de villkor som beskrivs i specifikationen.
+
+- Programkoden ska skapas endast efter testmetoden.
+- Efter att ha skapat testmetoden bör testet misslyckas.
+- Senare, efter att ha skapat både testmetoden och programmet, bör testet lyckas.
+
+
+
+Inlämningskrav
+- Kod med minst 80 % testtäckning.
+- Main metoden behöver inte testas (täckningen måste fortfarande vara minst 80%).
+- Koden bör organiseras i minst två paket, main och test.
+
+Tester bör inkludera:
+# Boundry testing
+# Null values
+# Exceptions
+# Input
+# Output
+# Data Types
+
+Använd Annotation @DisplayName, och @Test.
+Använd gärna andra Annotations också.
+
+Det bör finnas en testmetod för varje testfall.
+
+Testklasser ska namnges på samma sätt som programklasser med tillägg av suffixet "Test".
+Exempel: Bil -> BilTest.
+
+Metoder bör namnges med tillägg av testbeskrivning
+Exempel: add() -> addCheckNotANumber()
+
+Kort beskrivning av uppgiftslösningen (max 1 sida)
+- Vilka tester som är viktiga att ha?
+- Viktiga ändringar i programmet, vad som var svårt i uppgiften etc.
+
+En skärmbild av kodtäckningen för både programkod och testkod.
+
+Du bör skapa tester till alla krav som anges i specifikationen.
+
+Om du inte är säker på vilken typ av test som ska utföras bör du skriva testet enligt din förståelse,
+senare beskriva hur du förstod koden.
+
+Kod, beskrivning och bild ska länkas/laddas upp i Google Classroom.
+
+Namnge repot såhär:
+# JAVA22-TDD-Miniprojekt1-fornamn-efternamn (Ex: JAVA22-TDD-Miniprojekt2-Karim-Sendesni)
