@@ -10,12 +10,12 @@ _Second mini project in the TDD course. The assignment was to create all necessa
     The main method does not need to be tested (coverage must still be at least 80%).
     The code should be organized into at least two packages, main and test.
     Tests should include (if needed):
-      _Boundary testing
+      Boundary testing
       Null values
       Exceptions
       Input
       Output
-      Data Types_
+      Data Types
     Use the Annotations @DisplayName and @Test.
     Feel free to use other Annotations as well.
     There should be a test method for each test case.
@@ -23,10 +23,12 @@ _Second mini project in the TDD course. The assignment was to create all necessa
     Example: Car -> CarTest.
     Methods should be named with the addition of a test description.
     Example: add() -> addCheckNotANumber()
-    Brief description of the task solution (max 1 page), which tests are important to have, important changes in the program, what was challenging in the task, etc.
+    Brief description of the task solution (max 1 page), which tests are important to have, 
+    important changes in the program, what was challenging in the task, etc.
     A screenshot of code coverage for both program code and test code.
     You should create tests for all the requirements specified in the specification.
-    If you are unsure about the type of test to perform, you should write the test according to your understanding, later describing how you interpreted the code.
+    If you are unsure about the type of test to perform, you should write the test according to your understanding, 
+    later describing how you interpreted the code.
     
 # Question:
   
