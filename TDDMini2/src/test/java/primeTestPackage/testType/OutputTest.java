@@ -41,7 +41,6 @@ public class OutputTest {
     @DisplayName("OutputTest testPrintValidBoundary() | Values used -> {0}, {1} | expected : correct msg")
     void testPrintValidBoundary(int start, int end, int expectedCount, int expectedSum) {
         new Prime(start, end);
-        //System.out.println(p.printCount() + p.printSum());
         assertEquals(format(outPrintMsg.get("count") + outPrintMsg.get("sum"), expectedCount,start, end,  expectedSum), outputStreamCaptor.toString().trim());
     }
 
