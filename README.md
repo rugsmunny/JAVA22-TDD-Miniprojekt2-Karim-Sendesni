@@ -48,7 +48,7 @@ _Create all necessary tests by implementing the red-green-refactor concept._
   
   - "Which tests are important to have?"
     
-  _Boundary, output and null. These are the tests that will assure that the 'program' functioning according to the requirements._
+  _Boundary, output and null. These are the tests that will assure that the 'program' is functioning according to the requirements._
           
   - "Important changes in the program?"
     
