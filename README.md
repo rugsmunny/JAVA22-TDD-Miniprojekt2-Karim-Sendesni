@@ -36,8 +36,8 @@ _Create all necessary tests by implementing the red-green-refactor concept._
   
   Why? 
   
-  _One of the details regarding the assignment was to only do the least amount of refactoring necessary to make the code functional. While trying to keep as much of the original code as possible I realised that a lot of the tests I have had developed weren't even going to run e.g. testing invalid datatypes, null values and exceptions. 
-  So there is no input, null, exception, input or dataType testing done in this final version, only output and boundary testing._
+  _One of the details regarding the assignment was to only do the least amount of refactoring necessary to make the code functional. While trying to keep as much of the original code as possible I realised that a lot of the tests I have had developed weren't even going to run e.g. testing invalid datatypes and exceptions. 
+  So there is no input, exception, input or dataType testing done in this final version, only null, output and boundary testing._
   
   _The class provided includes no getters or setters except one getter for a list including all prime numbers found between the interval used during initiation of a Prime object. The constructor accepts nothing else except two int values and on top of that a Prime object is always constructed no matter what invalid int values are being used. Therefore I found that testing constructor functionality is only possible by checking if the list is null or not._
   
