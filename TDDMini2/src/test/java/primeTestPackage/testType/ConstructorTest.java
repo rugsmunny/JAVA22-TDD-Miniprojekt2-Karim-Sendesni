@@ -33,18 +33,4 @@ public class ConstructorTest {
     void testConstructorInvalidBoundary(int start, int end) {
         assertNull(new Prime(start, end).getPrimes());
     }
-
-    /*@ParameterizedTest
-    @MethodSource("primeTestPackage.testModel.Prime#invalidDataTypesArgs")
-    @DisplayName("ConstructorTest : Invalid DataTypes | Values used -> {0}, {1} | expected : null")
-    void testConstructorInvalidDataTypes(int start, int end) {
-        assertNull(new Prime(start, end).getPrimes());
-    }
-
-    @ParameterizedTest
-    @MethodSource("primeTestPackage.testModel.Prime#nullArgs")
-    @DisplayName("ConstructorTest : NullArgs | Values used -> {0}, {1} | expected : null")
-    void testConstructorNullArgs(int start, int end) {
-        assertNull(new Prime(start, end).getPrimes());
-    }*/
 }
