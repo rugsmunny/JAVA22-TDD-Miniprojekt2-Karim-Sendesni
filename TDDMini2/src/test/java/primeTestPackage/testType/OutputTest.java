@@ -40,8 +40,8 @@ public class OutputTest {
     @MethodSource("primeTestPackage.testModel.Prime#validBoundaryArgs")
     @DisplayName("OutputTest testPrintValidBoundary() | Values used -> {0}, {1} | expected : correct msg")
     void testPrintValidBoundary(int start, int end, int expectedCount, int expectedSum) {
-        Prime p = new Prime(start, end);
-        System.out.println(p.printCount() + p.printSum());
+        new Prime(start, end);
+        //System.out.println(p.printCount() + p.printSum());
         assertEquals(format(outPrintMsg.get("count") + outPrintMsg.get("sum"), expectedCount,start, end,  expectedSum), outputStreamCaptor.toString().trim());
     }
 
@@ -56,22 +56,5 @@ public class OutputTest {
         new Prime(start, end);
         assertEquals(outPrintMsg.get("error"), outputStreamCaptor.toString().trim());
     }
-/*
-    @ParameterizedTest
-    @MethodSource("primeTestPackage.testModel.Prime#invalidDataTypesArgs")
-    @DisplayName("OutputTest testPrintInvalidDataTypes() | Values used -> {0}, {1} | expected : {2}, {3}")
-    void testPrintInvalidDataTypes(int start, int end, int expectedCount, int expectedSum) {
-        Prime p = new Prime(start, end);
-        System.out.println(p.printCount() + p.printSum());
-        assertEquals(format(outPrintMsg.get("count") + outPrintMsg.get("sum"), start, end, expectedCount, expectedSum), outputStreamCaptor.toString().trim());
-    }
-
-    @ParameterizedTest
-    @MethodSource("primeTestPackage.testModel.Prime#nullArgs")
-    @DisplayName("OutputTest testPrintNullArgs() | Values used -> {0}, {1} | expected : {2}, {3}")
-    void testPrintNullArgs(int start, int end, int expectedCount, int expectedSum) {
-        Prime p = new Prime(start, end);
-        System.out.println(p.printCount() + p.printSum());
-        assertEquals(format(outPrintMsg.get("count") + outPrintMsg.get("sum"), start, end, expectedCount, expectedSum), outputStreamCaptor.toString().trim());
-    }*/
 }
+
