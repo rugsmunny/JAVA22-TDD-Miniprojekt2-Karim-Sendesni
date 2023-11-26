@@ -3,9 +3,10 @@
 
 _Second mini project in the TDD course. The assignment was to create all necessary tests for the code provided by our educator._
 
+# Assignment
+_Create all necessary tests by implementing the red-green-refactor concept._
 
 # Requirements
-    
     Code with at least 80% test coverage.
     The main method does not need to be tested (coverage must still be at least 80%).
     The code should be organized into at least two packages, main and test.
@@ -19,26 +20,30 @@ _Second mini project in the TDD course. The assignment was to create all necessa
     Use the Annotations @DisplayName and @Test.
     Feel free to use other Annotations as well.
     There should be a test method for each test case.
-    Test classes should be named the same way as program classes with the addition of the suffix "Test".
-    Example: Car -> CarTest.
-    Methods should be named with the addition of a test description.
-    Example: add() -> addCheckNotANumber()
-    Brief description of the task solution (max 1 page), which tests are important to have, 
-    important changes in the program, what was challenging in the task, etc.
-    A screenshot of code coverage for both program code and test code.
-    You should create tests for all the requirements specified in the specification.
-    If you are unsure about the type of test to perform, you should write the test according to your understanding, 
-    later describing how you interpreted the code.
     
 # Question:
   
-  _"What tests might be necessary/important to include, and what was the most challenging part of this project?"_
+  _"Which tests are important to have, important changes in the program, what was challenging in the task?"_
 
 # Answer:
   
-  _"The most challenging part was not so much writing 'tests', but rather determining which tests were essential. 
-  It's possible to test every minute detail, even create a single test that covers everything. 
-  However, striking the right balance without having super test classes or methods was the real challenge._
+  _"Tbh this was a challenge! Creating tests according to the requirements was an unnecessary struggle.
+  I started out by creating all tests that I presumed were needed to fullfill the assignment. 
+  After countless hours I trashed everything and started it all over again.
+  
+  Why? 
+  
+  One of the details regarding the assignment was to only do the least amount of refactoring necessary to make the code functional. While trying to keep as much of the original code as possible I realised that a lot of the tests I have had developed weren't even going to run e.g. testing invalid datatypes, null values and exceptions. 
+  So there is no input, null, exception, input or dataType testing done in this final version, only output and boundary testing.
+  
+  The class provided includes no getters or setters except one getter for a list including all prime numbers found between the interval used during initiation of a Prime object. The constructor accepts nothing else except two int values and on top of that a Prime object is always constructed no matter what invalid int values are being used. Therefore I found that testing constructor functionality is only possible by checking if the list is null or not.
+  
+  Boundary and output testing with valid data type was quite straight forward. Turning all those tests from red to green was a simple step by step procedure.
+  Some minor refactoring, run test, green? Take on next red test.
+  
+  So to summaries:
+      -"Which tests are important to have?"
+      _
   
   
 # Test Overview 
