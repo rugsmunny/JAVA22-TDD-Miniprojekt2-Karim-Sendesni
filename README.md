@@ -32,31 +32,32 @@ _Create all necessary tests by implementing the red-green-refactor concept._
   
   _"Tbh this was a challenge! Creating tests according to the requirements was an unnecessary struggle.
   I started out by creating all tests that I presumed were needed to fullfill the assignment. 
-  After countless hours I trashed everything and started it all over again.
+  After countless hours I trashed everything and started it all over again._
   
   Why? 
   
-  One of the details regarding the assignment was to only do the least amount of refactoring necessary to make the code functional. While trying to keep as much of the original code as possible I realised that a lot of the tests I have had developed weren't even going to run e.g. testing invalid datatypes, null values and exceptions. 
-  So there is no input, null, exception, input or dataType testing done in this final version, only output and boundary testing.
+  _One of the details regarding the assignment was to only do the least amount of refactoring necessary to make the code functional. While trying to keep as much of the original code as possible I realised that a lot of the tests I have had developed weren't even going to run e.g. testing invalid datatypes, null values and exceptions. 
+  So there is no input, null, exception, input or dataType testing done in this final version, only output and boundary testing._
   
-  The class provided includes no getters or setters except one getter for a list including all prime numbers found between the interval used during initiation of a Prime object. The constructor accepts nothing else except two int values and on top of that a Prime object is always constructed no matter what invalid int values are being used. Therefore I found that testing constructor functionality is only possible by checking if the list is null or not.
+  _The class provided includes no getters or setters except one getter for a list including all prime numbers found between the interval used during initiation of a Prime object. The constructor accepts nothing else except two int values and on top of that a Prime object is always constructed no matter what invalid int values are being used. Therefore I found that testing constructor functionality is only possible by checking if the list is null or not._
   
-  Boundary and output testing with valid data type was quite straight forward. Turning all those tests from red to green was a simple step by step procedure.
-  Some minor refactoring, run test, green? Take on next red test.
+  _Boundary and output testing with valid data type was quite straight forward. Turning all those tests from red to green was a simple step by step procedure.
+  Some minor refactoring, run test, green? Take on next red test._
   
-  So to summaries:
+  So to summarize it all:
+  
   -"Which tests are important to have?"
-  Boundary, output and null. These are the tests that will assure that the 'program' functioning according to the requirements.
+  _Boundary, output and null. These are the tests that will assure that the 'program' functioning according to the requirements._
           
   -"Important changes in the program?"
     
-  Added three print methods: printCount(), printSum() and printError(), all private since that seemed to be the theme of the class.
+  _Added three print methods: printCount(), printSum() and printError(), all private since that seemed to be the theme of the class.
   Created isValidInitiationValues() to ensure that no calculations are run unless the values are within stated limits.
   Both methods numIsPrime() and calculatePrimes() where in need of some serious refactoring but i tried to keep the 
-  solutions as close to the 'intended way' as much as possible.
+  solutions as close to the 'intended way' as much as possible._
       
   - "What was challenging in the task?
-  Creating tests for an already messed up program according to what seemed to be, unreachable requirements. But I am looking forward to the feedback in the hopes of learning something new._
+  _Creating tests for an already messed up program according to what seemed to be, unreachable requirements. But I am looking forward to the feedback in the hopes of learning something new._
   
   
 # Test Overview 
