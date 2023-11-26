@@ -46,10 +46,10 @@ _Create all necessary tests by implementing the red-green-refactor concept._
   
   So to summarize it all:
   
-  -"Which tests are important to have?"
+  - "Which tests are important to have?"
   _Boundary, output and null. These are the tests that will assure that the 'program' functioning according to the requirements._
           
-  -"Important changes in the program?"
+  - "Important changes in the program?"
     
   _Added three print methods: printCount(), printSum() and printError(), all private since that seemed to be the theme of the class.
   Created isValidInitiationValues() to ensure that no calculations are run unless the values are within stated limits.
