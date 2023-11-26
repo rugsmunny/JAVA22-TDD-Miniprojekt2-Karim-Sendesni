@@ -21,6 +21,8 @@ public class Prime {
         this.lastNumber = lastNumber;
         primes = new ArrayList<>();
         calculatePrimes(firstNumber, lastNumber);
+        printCount();
+        printSum();
     }
 
     private boolean isValidInitiationValues(int firstNumber, int lastNumber) {
@@ -58,12 +60,12 @@ public class Prime {
         return primes;
     }
 
-    public String printCount() {
-        return "Hej, det finns " + count + " primtal mellan " + firstNumber + " och " + lastNumber + "!";
+    private void printCount() {
+        System.out.print("Hej, det finns " + count + " primtal mellan " + firstNumber + " och " + lastNumber + "!");
     }
 
-    public String printSum() {
-        return "Och den totala summan av dessa primtal är " + sumOfPrimes;
+    private void printSum() {
+        System.out.print("Och den totala summan av dessa primtal är " + sumOfPrimes);
     }
 
     private void printError() {
