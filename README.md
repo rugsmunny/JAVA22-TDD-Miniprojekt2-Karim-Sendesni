@@ -21,6 +21,9 @@ _Create all necessary tests by implementing the red-green-refactor concept._
     Feel free to use other Annotations as well.
     There should be a test method for each test case.
     
+    Console Print Methods:
+    Implement two methods, printCount() and printSum(), for convenient console output.
+    
 # Question:
   
   _"Which tests are important to have, important changes in the program, what was challenging in the task?"_
@@ -42,36 +45,39 @@ _Create all necessary tests by implementing the red-green-refactor concept._
   Some minor refactoring, run test, green? Take on next red test.
   
   So to summaries:
-      -"Which tests are important to have?"
-      _
+  -"Which tests are important to have?"
+  Boundary, output and null. These are the tests that will assure that the 'program' functioning according to the requirements.
+          
+  -"Important changes in the program?"
+    
+  Added three print methods: printCount(), printSum() and printError(), all private since that seemed to be the theme of the class.
+  Created isValidInitiationValues() to ensure that no calculations are run unless the values are within stated limits.
+  Both methods numIsPrime() and calculatePrimes() where in need of some serious refactoring but i tried to keep the 
+  solutions as close to the 'intended way' as much as possible.
+      
+  - "What was challenging in the task?
+  Creating tests for an already messed up program according to what seemed to be, unreachable requirements. But I am looking forward to the feedback in the hopes of learning something new._
   
   
 # Test Overview 
 
-  class ValidValueTests:
+  class OutputTest:
   
-    testEquilateralTriangle(): Tests an equilateral triangle with values 2, 2, 2.
-    testScaleneTriangle(): Tests a scalene triangle with values 3, 4, 5.
-    testIsoscelesTriangle(): Tests an isosceles triangle with values 3, 3, 4.
-    testValidUserInput(): Tests user input with values 3, 4, 5.
+    testPrintInvalidBoundary()
+    testPrintValidBoundary()
     
-  class InvalidValueTests:
+  class ConstructorTest:
   
-    testNotATriangle(): Tests with invalid values for a triangle (1, 2, 3).
-    testValidUserInputInvalidLength(): Tests user input with too many values (3, 4, 5, 6).
+    testConstructorInvalidBoundary()
+    testConstructorValidBoundary()
     
-  class NumberFormatExceptionTests:
-  
-    testInvalidUserInputNumberFormatException(): Tests user input with invalid data types (x, y, z).
-    
-  class ConstructorTests:
-  
-    testStringConstructor(): Tests the constructor with a string array for a scalene triangle (3, 4, 5).
-    testStringConstructorFaultyValueAmount(): Tests the constructor with an incorrect length of values (3, 4, 5, 0).
-    testNegativeLengths(): Tests the constructor with negative values (-1, -2, -3).
-    testInvalidStringConstructor(): Tests the constructor with invalid data types (a, b, c).
-    testEmptyConstructor(): Tests the constructor with empty input.
+  class LogicTest:
+
+    testLogicValidBoundaryCount()
+    testLogicInvalidBoundaryCount() 
+    testLogicInvalidBoundarySum() 
+    testLogicValidBoundarySum() 
 
 # Test result
 
-  ![printscreen of test result](https://github.com/rugsmunny/JAVA22-TDD-Miniprojekt1-Karim-Sendesni/assets/49041363/9394e829-03b1-44c0-b7d4-8f0224ddbf8a)
+  ![printscreen of test result](https://github.com/rugsmunny/JAVA22-TDD-Miniprojekt2-Karim-Sendesni/assets/49041363/4f6ee5a2-5142-4160-9276-d07670bc0c67)
