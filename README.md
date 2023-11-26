@@ -47,6 +47,7 @@ _Create all necessary tests by implementing the red-green-refactor concept._
   So to summarize it all:
   
   - "Which tests are important to have?"
+    
   _Boundary, output and null. These are the tests that will assure that the 'program' functioning according to the requirements._
           
   - "Important changes in the program?"
@@ -57,6 +58,7 @@ _Create all necessary tests by implementing the red-green-refactor concept._
   solutions as close to the 'intended way' as much as possible._
       
   - "What was challenging in the task?
+    
   _Creating tests for an already messed up program according to what seemed to be, unreachable requirements. But I am looking forward to the feedback in the hopes of learning something new._
   
   
